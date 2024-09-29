@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(#021526, #EBF4F6, #021526);
+  color: #EBF4F6;
+}
+
+
+.main {
+  margin-block: 2em;
+  padding: 2em;
+  inline-size: 95vw;
+  min-inline-size: 21.87rem;
+  max-inline-size: 50ch;
+  text-align: center;
+  background-image: url('./image/hero.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #021526;
+}
+.man-img {
+  inline-size: 150px;
+}
+.title {
+  margin: 0;
+  font-size: 3.5rem;
+  text-shadow: -2px 2px #6439FF;
+}
+.jump-number {
+  margin: .15em 0 .2em;
+  font-size: 5rem;
+  text-shadow: -2px -2px #EBF4F6;
+  color: #6439FF;
+}
+.buttons {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.btn {
+  flex: 1;
+  padding-block: .35em;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  border-left-width: 3px;
+  border-bottom-width: 3px;
+  color: #021526;
+}
+.increment-btn {
+  background-color: #3DC2EC;
+}
+.save-btn {
+  background-color: #059212;
+}
+
+.previous-numbers {
+  padding: 1em;
+  font-size: 1.5rem;
+  background-color: #02152690;
+  border-radius: 5px;
+  text-shadow: 2px 2px #6439FF;
+}
+
+.footer {
+  text-shadow: 0 0 1px #021526;
+}
+.footer-cta {
+  font-weight: bold;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  text-shadow: 0 0 1px #EBF4F6;
+  color: #6439FF;
+}
+
+@media (hover:hover) {
+  .btn:hover {
+    border-width: 1px;
+  }
+}

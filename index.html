@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jump Counter App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <main class="main">
+    <h1 class="title">Jumps:</h1>
+    <p class="jump-number" id="jump-number">0</p>
+    <div class="buttons">
+      <button class="increment-btn btn" type="button" onclick="increment()">increment</button>
+      <button class="save-btn btn" type="button" onclick="save()">save</button>
+    </div>
+    <p class="previous-numbers">Previous entries: 
+      <span id="previous-numbers"></span>
+    </p>
+  </main>
+  
+  <footer class="footer">
+    <p>Project by <a href="https://v2.scrimba.com/courses" target="_blank" rel="noopener noreferrer" class="footer-cta">Scrimba</a> - Developed by <a href="https://github.com/mendezpvi/fcp-jump-counter-app" target="_blank" rel="noopener noreferrer" class="footer-cta">VIMP</a></p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
